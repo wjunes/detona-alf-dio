@@ -1,4 +1,5 @@
 .grid {
+    margin-top: 20px;
     width: 612px;
     height: 600px;
     display: flex;
@@ -21,13 +22,13 @@
 }
 
 body{
-    background-image: url('/img/MELMAC.svg');
+    background-image: url('/img/MELMAC2.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body h2 {
-    margin: 5px;
+    margin-top: 20px;
     text-align: center;
     font-size: 32px;
     font-family: "Press Start 2P", cursive;
