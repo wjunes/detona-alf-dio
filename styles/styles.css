@@ -10,7 +10,7 @@
 .square {
     height: 200px;
     width: 200px;
-    border: solid red 2px;
+    border: solid yellowgreen 2px;
     
      
 }
@@ -21,7 +21,7 @@
 }
 
 body{
-    background-image: url('/img/planets.jpg');
+    background-image: url('/img/MELMAC.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,7 +30,8 @@ body h2 {
     margin: 5px;
     text-align: center;
     font-size: 32px;
-    color: red;
+    font-family: "Press Start 2P", cursive;
+    color: yellowgreen;
     font-weight: 900;
     
 }
