@@ -17,12 +17,12 @@
 }
 
 .alf {
-    background-image: url('/img/Alf.png');
+    background-image: url('/src/img/Alf.png');
     background-size: cover;
 }
 
 body{
-    background-image: url('/img/MELMAC2.svg');
+    background-image: url('/src/img/MELMAC2.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,3 +36,4 @@ body h2 {
     font-weight: 900;
     
 }
+
