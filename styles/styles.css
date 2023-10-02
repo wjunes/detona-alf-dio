@@ -1,0 +1,36 @@
+.grid {
+    width: 612px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 654px;
+    background-color: transparent;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: solid red 2px;
+    
+     
+}
+
+.alf {
+    background-image: url('/img/Alf.png');
+    background-size: cover;
+}
+
+body{
+    background-image: url('/img/planets.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body h2 {
+    margin: 5px;
+    text-align: center;
+    font-size: 32px;
+    color: red;
+    font-weight: 900;
+    
+}
