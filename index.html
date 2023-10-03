@@ -21,8 +21,15 @@
 <body>
     <main class="content">
         <header>
-                    <h1>Time-Left:</h1>
+            <h1>Time-Left:</h1>
             <h1 id="time-left">60</h1>
+            <h1>Your Score:</h1>
+            <h1 id="score">0</h1>
+            <div class="menu-lives">
+                <img src="./src/img/cat-face-sf.png" height="50" width="50" alt="">
+                <h1>X3</h1>
+            </div>
+
           </header>
             <!-- Informations -->
         
@@ -40,14 +47,10 @@
                 <div class="square" id="8"></div>
                 <div class="square" id="9"></div>
             </div>
-            <audio controls autoplay loop class="audio">
-                <source src="/src/audio/trilha-alf.mp3" type="audio/mp3" />
+            <audio controls autoplay  class="audio" >
+                <source src="/src/audio/trilha-alf.mp3" type="audio/mp3" preload="auto" />
             </audio>
         
-            <footer>
-                <h1>Your Score:</h1>
-                <h1 id="score">0</h1>
-            </footer>
             <!-- scripts -->
             <script src="/src/js/engine.js" charset="utf-8"></script>
         </body>

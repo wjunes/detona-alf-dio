@@ -1,5 +1,6 @@
+
 const squares = document.querySelectorAll('.square')
-const mole = document.querySelector('.alf')
+const alf = document.querySelector('.alf')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 
@@ -19,22 +20,29 @@ function randomSquare() {
     hitPosition = randomSquare.id
 }
 
+function playSound(audioName) {
+    let audio = new Audio(`./src/audio/${audioName}.mp3`);
+    audio.volume = 0.4;
+    audio.play();
+  }
+
 squares.forEach(square => {
     square.addEventListener('mousedown', () => {
       if (square.id == hitPosition) {
           result++
           score.textContent = result
           hitPosition = null
+          playSound("ouch-rev");
       }  
     })
 })
 
-function moveMole() {
+function moveAlf() {
     
     timerId = setInterval(randomSquare, 700)
 }
 
-moveMole()
+moveAlf()
 
 function countDown() {
     currentTime--
@@ -43,7 +51,7 @@ function countDown() {
     if (currentTime == 0) {
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('GAME OVER! Your final score is' + result)
+        alert('GAME OVER! Your final score is: ' + result)
     }
 }
 

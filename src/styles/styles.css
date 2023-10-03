@@ -16,6 +16,18 @@
     justify-content: center;
     width: 100%;
     height: 90PX;
+    gap: 30px;
+ }
+
+ .menu-lives{
+    width: 150px;
+    height: 60px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
  }
 
 .grid {
@@ -24,7 +36,6 @@
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-
     background-color: transparent;
 }
 
@@ -48,7 +59,7 @@ body{
 }
 
 body h1 {
-    margin-right: 30px;
+    margin-right: 10px;
     text-align: center;
     font-size: 32px;
     font-family: "Press Start 2P", cursive;
