@@ -20,14 +20,17 @@
  }
 
  .menu-lives{
-    width: 150px;
+    width: 300px;
     height: 60px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+ }
+ #lives{
+    gap: 5px;
  }
 
 .grid {
@@ -61,7 +64,7 @@ body{
 body h1 {
     margin-right: 10px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-family: "Press Start 2P", cursive;
     color: #9acd32;
     font-weight: 900;

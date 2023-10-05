@@ -9,6 +9,7 @@
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="./src/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="./src/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/modal.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +21,18 @@
 
 <body>
     <main class="content">
+
+         <!-- Informations -->
         <header>
-            <h1>Time-Left:</h1>
-            <h1 id="time-left">60</h1>
             <h1>Your Score:</h1>
             <h1 id="score">0</h1>
             <div class="menu-lives">
                 <img src="./src/img/cat-face-sf.png" height="50" width="50" alt="">
-                <h1>X3</h1>
+                <h1 id="lives">LIVES X-9</h1>
             </div>
 
           </header>
-            <!-- Informations -->
+           
         
         
             <!-- Game area -->
@@ -47,12 +48,26 @@
                 <div class="square" id="8"></div>
                 <div class="square" id="9"></div>
             </div>
-            <audio controls autoplay  class="audio" >
+
+            <!-- nusical curtain -->
+            <audio controls autoplay loop class="audio" >
                 <source src="/src/audio/trilha-alf.mp3" type="audio/mp3" preload="auto" />
             </audio>
+
+            <!-- modal game over -->
+            <div id="gameOverModal" class="modal">
+                <div class="modal-content">
+                    <h2>Game Over</h2>
+                    <p>Your final score is: <span id="finalScore">0</span></p>
+                    <button id="restartButton">Restart</button>
+                </div>
+            </div>
+            
+            </div>
         
             <!-- scripts -->
-            <script src="/src/js/engine.js" charset="utf-8"></script>
+            <script src="./src/js/modal.js"></script>
+            <script src="./src/js/engine.js" charset="utf-8"></script>
         </body>
         
         </html>
